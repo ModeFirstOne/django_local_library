@@ -1,0 +1,151 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="{%block description%}{%endblock description%}">
+  <meta name="keywords" content="{%block keywords%}{%endblock keywords%}">
+  <meta name="author" content="">
+
+  <title>{% block title %}{% endblock title%}</title>
+
+  <!-- Bootstrap core CSS -->
+
+  <link href = "{%static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href = "{%static 'css/shop-homepage.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  {% block navbar%}
+  {% include 'include/navbar.html' %}
+  {% endblock navbar %}
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+  <!-- left sidebar -->
+  {% block sidebar_left %}
+  {% include 'include/sidebar_left.html' %}
+  {% endblock sidebar_left %}
+
+      <!-- /.col-lg-3 -->
+  {% block slider %}
+  {% include 'include/slider.html' %}
+  {% endblock slider %}
+
+
+{%block content%}
+  <div class="row">
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <a href="/blog/ourwork/"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">GENESIS TATOO</a>
+          </h4>
+        </div>
+        <div class="card-footer">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="/blog/ourwork/">GENESIS TATOO</a>
+          </h4>
+        </div>
+        <div class="card-footer">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <a href="/blog/ourwork/"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">GENESIS TATOO</a>
+          </h4>
+        </div>
+        <div class="card-footer">
+        </div>
+      </div>
+    </div>
+<!--
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Item Five</a>
+          </h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Item Six</a>
+          </h4>
+          <h5>$24.99</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+        </div>
+      </div>
+    </div>-->
+
+  </div>
+<h1>О тату</h1>
+<hr>
+<p><strong><Киев - столица Украины, город с сотнями тысяч жителей и каждый из них хочет выделяться из толпы. Люди прибегают к разнообразным методам, что бы быть не такими как все. Комбинирование одежды, покраска волос во все цвета радуги, мейкап в стиле барби. И это еще не все, что делают люди, что бы их заметили.  Но чаще всего приворачивают внимание не так называемые эпатажные люди, а те которые имеют тату. Но вот незадача - найти хорошего тату мастера даже в таком большущем городе очень сложно.
+
+На данный момент тату-мастером может себя назвать каждый. Набивая дома китайскими машинками тату, портят людям все мнения о всех тату-специалистах. Если вы решились набить тату и проживаете, или отдыхаете в Киеве, приходите в наш тату салон "VeAn". В салоне работают высококвалифицированные мастера с большим стажем, качественными тату материалами и тату оборудованием. Процедура нанесения тату проходит исключительно в специализированном кабинете с соблюдением всех правил и норм санитарии.</strong></p>
+<hr>
+<hr>
+{%endblock content%}
+  <!-- /.row -->
+
+</div>
+<!-- /.col-lg-9 -->
+
+</div>
+
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  {% block footer %}
+  {% include 'include/footer.html' %}
+  {% endblock footer %}
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>

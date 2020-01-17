@@ -1,0 +1,11 @@
+{% extends "blog/index.html"%}
+
+<meta name="description" content="{%block description%}{{blog_service_view.description}}{%endblock description%}">
+<meta name="keywords" content="{%block keywords%}{{blog_service_view.keywords}}{%endblock keywords%}">
+<title>{% block title %}Информация{% endblock title %}</title>
+
+{%block content%}
+
+{{blog_model_view.text}}
+
+{%endblock content%}
